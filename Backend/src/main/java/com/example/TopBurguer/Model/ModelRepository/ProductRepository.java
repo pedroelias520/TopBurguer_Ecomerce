@@ -1,5 +1,10 @@
 package com.example.TopBurguer.Model.ModelRepository;
 
-public class ProductRepository {
+import org.springframework.data.repository.PagingAndSortingRepository;
 
+import com.example.TopBurguer.Model.Product;
+
+public interface productRepository extends PagingAndSortingRepository<Product, Integer>{
+
+	public Iterable<Product> findByNomeContaningIgnoreCase(String namePart);
 }

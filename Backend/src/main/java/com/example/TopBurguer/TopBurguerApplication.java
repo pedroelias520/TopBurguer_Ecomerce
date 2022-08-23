@@ -18,21 +18,6 @@ import com.google.auth.oauth2.GoogleCredentials;
 public class TopBurguerApplication {
 
 	public static void main(String[] args) throws IOException{
-		ClassLoader classloader = TopBurguerApplication.class.getClassLoader();
-		File file = new File(Objects.requireNonNull(classloader.getResource("topburguerapp-firebase.json")).getFile());
-		
-		FileInputStream serviceAccount = new FileInputStream(file.getAbsolutePath());
-		
-		FirebaseOptions options = new FirebaseOptions.Builder()
-			.setCredentials(GoogleCredentials.fromStream(serviceAccount))
-			.setDatabaseUrl("https://topburguerapp-default-rtdb.firebaseio.com")
-			.build();
-		
-		
-		if(FirebaseApp.getApps().size() < 0) {
-			FirebaseApp.initializeApp(options);
-			System.out.println(FirebaseApp.DEFAULT_APP_NAME);
-		}
 					
 		SpringApplication.run(TopBurguerApplication.class, args);
 	}

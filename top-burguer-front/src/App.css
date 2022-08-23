@@ -1,5 +1,31 @@
+@font-face {
+  font-family: 'BebasNue';
+  src: url(/public/Fonts/BebasNue.ttf);
+}
+
+@font-face {
+  font-family: 'JumperBold';
+  src: url(/public/Fonts/Jumper-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'JumperExtraBold';
+  src: url(/public/Fonts/Jumper-Extra-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'JumperRegular';
+  src: url(/public/Fonts/Jumper-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'JumperRegularItalic';
+  src: url(/public/Fonts/JumperPERSONALUSEONLY-RegularItalic.ttf);
+}
+
 .App {
   text-align: center;
+  font-family: 'BebasNue';
 }
 
 .App-logo {
@@ -14,7 +40,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(to right,#EC9F05, #FF4E00);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
