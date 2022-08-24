@@ -1,14 +1,17 @@
 package com.example.TopBurguer.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 @Entity
+@Table(name = "products")
 public class Product {
 
 	@Id
@@ -16,7 +19,7 @@ public class Product {
 	private int id;
 	
 	@NotBlank
-	private String nome;
+	private String name;
 	
 	@Min(0)
 	@Max(1)
@@ -26,6 +29,7 @@ public class Product {
 	private double price;
 	
 	@NotBlank
+	@Column(columnDefinition = "TEXT")
 	private String image;
 	
 	public Product() {}
@@ -38,12 +42,12 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+	
+	public void setName(String nome) {
+		this.name = nome;
 	}
 
 	public double getDiscount() {

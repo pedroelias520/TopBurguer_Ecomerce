@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: 'JumperLight';
+  src: url(/public/Fonts/Jumper-Light.ttf);
+}
+
+@font-face {
+  font-family: 'JumperThin';
+  src: url(/public/Fonts/Jumper-Thin.ttf);
+}
+
+@font-face {
   font-family: 'JumperRegularItalic';
   src: url(/public/Fonts/JumperPERSONALUSEONLY-RegularItalic.ttf);
 }
@@ -40,7 +50,7 @@
 }
 
 .App-header {
-  background-image: linear-gradient(to right,#EC9F05, #FF4E00);
+  background-image: linear-gradient(to right,#ffffff, #e2e2e2);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
