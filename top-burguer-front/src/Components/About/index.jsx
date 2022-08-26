@@ -41,12 +41,11 @@ export const About = () => {
 
                     <ButtonDiv>
                         <motion.button
-                        className='buttonClick'
-                        whileHover={{ scale: 1.1}}
-                        whileTap={{scale: 0.8}}
+                        className='buttonClick'                                                
                         initial = {{opacity: 0, scale: 0.5}}
                         animate = {{opacity: 1, scale: 1.0}}
-                        transition = {{duration: 3.0, delay:0.5, ease : [0,1.0,0.2,1.01]}}                        
+                        transition = {{duration: 1.3, delay:0.2, ease : "easeOut"}}                        
+                        whileHover = {{scale:1.1}}
                         >
                             Fazer pedido
                         </motion.button>
@@ -55,14 +54,15 @@ export const About = () => {
 
                 <ImageStyle                    
                     initial={{
-                        opacity: 0
+                        opacity: 1
                     }}
-                    animate={{
-                        opacity: 1,                        
+                    animate={{                         
+                        y: [0,30,0]                      
                     }}
                     transition={{
-                        duration: 0.5,
-                        delay: 0.2,                        
+                        duration: 3.0,
+                        delay: 0.5,
+                        repeat: Infinity                                                
                     }}>
 
                     <img

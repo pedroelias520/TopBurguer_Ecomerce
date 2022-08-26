@@ -71,6 +71,6 @@ padding:10px;
     margin: auto;
     border: 0;
     height: 8vh;
-    width: 10vw;
+    width: 12vw;
 }
 `

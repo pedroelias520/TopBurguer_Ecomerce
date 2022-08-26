@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { motion } from 'framer-motion'
+import 'boxicons'
 
 import { HeaderStyled, Logo, Hamburguer, NavStyled, Content } from "./styles";
-import logo from '../../../public/img/tag.png'
+
 
 
 export const Header = () => {
@@ -30,19 +31,12 @@ export const Header = () => {
           type: 'spring',
           stiffness: 80
         }}
-      >
-        <Link href="/"><a>
-          <img
-          src={logo}
-          alt="Logotipo fechanto de tag"
-          layout="responsive"
-          />
-          </a>
-        </Link>
+      >        
       </Logo>
 
       <NavStyled show={showMenu}>
         <motion.li 
+        whileHover={{scale: 1.2}}
         initial={{
           y: '-250',
           opacity: 0
@@ -55,9 +49,10 @@ export const Header = () => {
           duration: .5,
           type: 'spring',
           delay: 0.1
-        }}><a href="#about">Sobre mim</a></motion.li>
+        }}><a href="#about">Fazer Pedido</a></motion.li>
 
         <motion.li
+        whileHover={{scale: 1.2}}
          initial={{
           y: '-250',
           opacity: 0
@@ -70,9 +65,10 @@ export const Header = () => {
           duration: .5,
           type: 'spring',
           delay: 0.2
-        }}><a href="#experiences">Minha Experiência</a></motion.li>
+        }}><a href="#experiences">Sobre Nós</a></motion.li>
 
         <motion.li
+        whileHover={{scale: 1.2}}
          initial={{
           y: '-250',
           opacity: 0
@@ -85,9 +81,10 @@ export const Header = () => {
           duration: .5,
           type: 'spring',
           delay: 0.3
-        }}><a href="#projects">Meus projetos</a></motion.li>
+        }}><a href="#projects">Contatos</a></motion.li>
         <motion.li
-         
+        className="loginButton"
+         whileHover={{scale: 1.2}}
          initial={{
           y: '-250',
           opacity: 0
@@ -100,7 +97,7 @@ export const Header = () => {
           duration: .5,
           type: 'spring',
           delay: 0.4
-        }}><a href="#contact">Meus serviços</a></motion.li>
+        }}><a href="#contact">Login</a><box-icon name='log-in-circle' color="#ffffff"></box-icon></motion.li>
       </NavStyled>
 
       <Hamburguer onClick={toogleMenu}>
@@ -108,8 +105,10 @@ export const Header = () => {
         <div className="two"></div>
         <div className="three"></div>
       </Hamburguer>
-
+      
     </Content>
   </HeaderStyled>
   )
 }
+
+export default Header;

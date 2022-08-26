@@ -33,6 +33,26 @@
   src: url(/public/Fonts/JumperPERSONALUSEONLY-RegularItalic.ttf);
 }
 
+@font-face {
+  font-family: 'ButlerLight';
+  src: url(/public/Fonts/Butler_Light_Stencil.otf);
+}
+
+@font-face {
+  font-family: 'ButlerRegular';
+  src: url(/public/Fonts/Butler_Regular_Stencil.otf);
+}
+
+@font-face {
+  font-family: 'ButlerBold';
+  src: url(/public/Fonts/Butler_Bold_Stencil.otf);
+}
+
+@font-face {
+  font-family: 'Alte';
+  src: url(/public/Fonts/Alte.ttf);
+}
+
 .App {
   text-align: center;
   font-family: 'BebasNue';

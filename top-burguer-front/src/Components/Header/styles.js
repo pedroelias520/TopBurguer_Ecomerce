@@ -11,7 +11,7 @@ export const HeaderStyled = styled.header`
 `
 export const Content = styled.div`
   max-width: 1200px;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,23 @@ export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-Family: 'JumperThin';
+  color: black;
+  font-size: 1vw;
   
+  .loginButton {
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #ff6200,#ff8e47);
+    display: flex;
+    align-items: center;
+    text-align: center;    
+
+    box-icon{
+      margin-left: 10px;
+      color : white;
+    }
+  }
 
   li {
     cursor: pointer;
