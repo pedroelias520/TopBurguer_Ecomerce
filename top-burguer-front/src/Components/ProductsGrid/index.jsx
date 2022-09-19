@@ -1,34 +1,24 @@
-import { TextField } from './styles'
-import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import ProductCard from '../ProductsGrid';
+import {motion} from 'framer-motion'
+
 
 export const ProductGrid = () => {
-    return (
-        <div className='mainDiv'>
-            <TextField>
-                <motion.div
-                className='headerText'
-                >
-                    <motion.h1  
-                        className='primaryText'                     
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                        Nossos produtos
-                    </motion.h1>
+    /*
+    const [data,setData] = useState([]);
 
-                    <motion.h6
-                        className='secondaryText'
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                        Basta clicar em um produto e fazer o seu pedido
-                    </motion.h6>
-                </motion.div>
+    useEffect(() => {
+        fetch("http://192.168.18.3:8080/products/all", {method:'GET'})
+        .then(response => response.json())            
+        .then(data => setData(data))
+      },[]) 
+      
+            console.log(data);
+      */
+    return (
+        <motion.div className='mainDiv'>
             
-            </TextField>
-        </div>)
+        </motion.div>)
 }
 
 export default ProductGrid;

@@ -1,26 +1,26 @@
-import { Card, TextField } from './styles'
+import { Card} from './styles'
 import { motion } from 'framer-motion'
 import productImage from '../../Images/Burguer.png';
 
-export const ProductCard = ({imageCard, nameCard, descriptionCard, priceCard}) => {
+export const ProductCard = ({product}) => {
     return (
         <div className='mainDiv'>
             <Card>
                 <motion.div className='imageDiv'>
-                    <img src={productImage} />
+                    <img src={product.img} />
                 </motion.div>
                 
                 <motion.div className='textDiv'>
                     <motion.h3
                         className='nameProductText'
                     >
-                        Hamburguer com cheddar e fritas
+                        {product.name}
                     </motion.h3>
 
                     <motion.h3
                         className='descriptionProductText'
                     >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+                        {product.description}
                     </motion.h3>
                 </motion.div>
 
@@ -31,7 +31,7 @@ export const ProductCard = ({imageCard, nameCard, descriptionCard, priceCard}) =
                 </motion.button>
 
                 <motion.h1 className='priceText'>
-                    14.99 R$
+                    {product.price}
                 </motion.h1>
             </Card>
         </div>)

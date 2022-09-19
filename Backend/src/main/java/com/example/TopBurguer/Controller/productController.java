@@ -5,6 +5,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import com.example.TopBurguer.Model.Product;
 import com.example.TopBurguer.Model.ModelRepository.productRepository;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/products")
 public class productController {
 

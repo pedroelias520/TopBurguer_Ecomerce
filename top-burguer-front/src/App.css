@@ -53,6 +53,11 @@
   src: url(/public/Fonts/Alte.ttf);
 }
 
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url(/public/Fonts/Poppins-Bold.otf);
+}
+
 .App {
   text-align: center;
   font-family: 'BebasNue';

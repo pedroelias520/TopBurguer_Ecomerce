@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
         <About></About>         
         <ProductGrid></ProductGrid>
-        <ProductCard></ProductCard>        
+        <ProductCard/>                
       </header>
     </div>
   );

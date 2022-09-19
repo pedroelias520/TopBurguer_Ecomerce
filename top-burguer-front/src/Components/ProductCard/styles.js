@@ -48,7 +48,7 @@ export const Card = styled(motion.div) `
         text-align: justify;
         height: max-content;
         text-justify: inter-word;             
-        font-family: 'BebasNue';
+        font-family: 'PoppinsBold';
         font-size: 2.0vw;
         margin:0;     
         padding-bottom:10px;          
@@ -94,7 +94,7 @@ export const Card = styled(motion.div) `
     }
 
     .priceText{
-        font-family: 'BebasNue';
+        font-family: 'PoppinsBold';
         margin:auto;                
         grid-column:1;
         grid-row:3;
